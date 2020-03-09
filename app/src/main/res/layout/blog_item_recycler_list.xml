@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="5dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/txt_bussiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Promoter"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30/11/2019"
+                android:id="@+id/txt_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txt_AuthorName"
+                android:layout_below="@+id/txt_bussiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author Name : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txt_baqat"
+                android:layout_toRightOf="@+id/txt_AuthorName"
+                android:layout_below="@+id/txt_bussiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                />
+
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@+id/txt_baqat"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/LightGrey"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view"
+                android:id="@+id/txt_contant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contant"
+                android:textSize="16dp"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_margin="5dp"
+                android:layout_below="@+id/txt_contant"
+                android:id="@+id/btn_readmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/read_more"
+                android:text="See Details"
+                android:textAllCaps="false"
+                android:textColor="@color/White" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

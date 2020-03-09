@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baqat_bg_icon"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/Img_logo"
+                    android:tint="@color/White"
+                    android:src="@drawable/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_below="@+id/Img_logo"
+                    android:id="@+id/txt_sign_in"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="SIGN IN"
+                    android:textSize="22dp"
+                    android:textColor="@color/White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/txt_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <!--nehajana@gmail.com-->
+
+                    <EditText
+                        android:paddingLeft="20dp"
+                        android:drawablePadding="20dp"
+                        android:id="@+id/userName_etxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/White"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/profile_white"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:hint="USERNAME..."
+                        android:textSize="16dp"
+                        android:background="@drawable/edt_icon"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:textColorHint="@color/White"
+                        android:singleLine="true" />
+
+                    <!--Neha893@-->
+
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:paddingLeft="20dp"
+                        android:drawablePadding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/White"
+                        android:layout_marginTop="30dp"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:hint="PASSWORD..."
+                        android:textSize="16dp"
+                        android:background="@drawable/edt_icon"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/txt_forgetpassword"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Forget Password ?"
+                        android:textSize="16dp"
+                        android:textColor="@color/White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/pass_etxt"
+                        android:id="@+id/Login_btn"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/White"
+                        android:text="Sign In"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/submit_btn"
+                        />
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:text="Not a member ?"
+                            android:textSize="16dp"
+                            android:textColor="@color/White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txt_sing_up"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="Create an account"
+                            android:textSize="16dp"
+                            android:textColor="@color/White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+

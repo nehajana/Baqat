@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HarshitCreateAdd.HarshitCreateNormalAdd"
+    >
+
+
+    <!-- Section One-->
+    <LinearLayout
+        android:id="@+id/LL_One"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_category_Name_title"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/Red"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            >
+        </View>
+
+        <!--condition -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_condition"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/Spinner_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--type-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_type"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="type "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/Spinner_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--usage -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_usage"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/spinner_getting_married_spinner8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--color -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_color"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_color"
+                    android:hint="Color"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--transmission_type -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_transmission_type"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="Transmission Type "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_transmission_type"
+                    android:hint="Horsepower"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Region Specific  -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_region_specific"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="region_specific"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <EditText
+                    android:id="@+id/edt_Region_Specific"
+                    android:hint="Region Specific .."
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--offer-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_offer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/spinner_offer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--model-->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/LL_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                        android:id="@+id/edt_model"
+                    android:hint="Model"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--kilometers -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_kilometers"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="kilometers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <EditText
+                    android:id="@+id/edt_kilometers"
+                    android:hint="Kilometers "
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Number of Cylinder  -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_no_of_cylinder"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="Tno_of_cylinder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <EditText
+                    android:id="@+id/edt_Number_of_Cylinder"
+                    android:hint="Number of Cylinder"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Horsepower    -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_horsepower"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="horsepower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_Horsepower"
+                    android:hint="Horsepower "
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Warranty   -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_warranty"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="Warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_Warranty"
+                    android:hint="Warranty "
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--year_of_making -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_year_of_making"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="year_of_making"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_year_of_making"
+                    android:hint="Year  Of  Making "
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--number_of_door -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_number_of_door"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="Number Of Door"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/spinner_number_of_door"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--If Rent - Recurrence Of Payment  -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_rent_recurrence_payment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="rent_recurrence_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_If_Rent_Recurrence_Of_Payment"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--bedroom -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_bedroom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="Bedroom *"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/Spinner_bedRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--bathroom -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_bathroom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="bathroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/Spinner_bathroom"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--developers -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_developers"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="developers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_developers"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--status -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_status"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/Spinner_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--available_from-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_available_from"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="available_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/txt_date_from"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="00-00-0000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/immg_calender_available_from"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--available_to -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_available_to"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="available_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/txt_date_to"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="00-00-0000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/immg_calender_availableTo"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--size -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_size"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_size"
+                    android:hint="size."
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--gender -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_gender"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_gender"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--nationality -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_nationality"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="nationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_nationality"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--position -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_position"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_position"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--expected_start_date -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_expected_start_date"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="expected_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_expected_start_date"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--degree -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_degree"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_degree"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--monthly_salary -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_monthly_salary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_monthly_salary"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--benifits -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_benifits"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="benifits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_benifits"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--current_position -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_current_position"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="benifits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_current_position"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--current_company -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_current_company"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="current_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_current_company"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--notice_period -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_notice_period"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="notice_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_notice_period"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--expected_monthly_salary -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_expected_monthly_salary2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="expected_monthly_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_expected_monthly_salary"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--resume_file_path -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_resume_file_path"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="expected_monthly_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/resume_file_path"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Body Type -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_body_type_id"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="body_type_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/spinner_body_type_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--field_type_id -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_field_type_id"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="field_type_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_field_type_id"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--career_level_id -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_career_level_id"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="career_level_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_career_level_id"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--company_field_type_id -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_company_field_type_id"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="company_field_type_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_company_field_type_id"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--brand -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_brand"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_brand"
+                    android:hint="Brand.."
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--maid_room -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_maid_room"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="maid_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_maid_room"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--swimming_pool -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_swimming_pool"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="swimming_pool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_swimming_pool"
+                    android:hint="swimming pool"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--garden -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_garden"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="garden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_garden"
+                    android:hint="Recurrence Of Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--private_parking -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/LL_private_parking"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="Private Parking *"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txt_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey_100">
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Spinner
+                        android:id="@+id/spinner_Private_Parking"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

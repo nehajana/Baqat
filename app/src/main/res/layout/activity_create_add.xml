@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    tools:context=".CreateAddScreen.CreateAddActivity">
+
+    <include layout="@layout/tool_bars"
+        android:id="@+id/RR_toolbar"/>
+
+    <ScrollView
+        android:layout_above="@+id/proceed_btn"
+        android:layout_below="@+id/RR_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/LL_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/RR_one"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:id="@+id/txt_one"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:background="@drawable/circle_bg"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_toLeftOf="@+id/RR_center"
+                    android:layout_toRightOf="@+id/RR_one"
+                    android:layout_centerVertical="true"
+                    android:background="@color/Gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    ></View>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RR_center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:id="@+id/txt_digit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="2"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:background="@drawable/circle_gray_bg"/>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_toLeftOf="@+id/RR_right"
+                    android:layout_toRightOf="@+id/RR_center"
+                    android:layout_centerVertical="true"
+                    android:background="@color/Gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    ></View>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RR_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="3"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:background="@drawable/circle_gray_bg"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/LL_process"
+                android:id="@+id/LL_process_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plans"
+                        android:gravity="center"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ad Details"
+                        android:gravity="center"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:gravity="center"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--  <RelativeLayout
+                  android:id="@+id/RR_plan"
+                  android:layout_margin="10dp"
+                  android:layout_below="@+id/LL_process"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Plans"
+                      android:textSize="16dp"
+                      android:layout_marginLeft="40dp"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Ad Detail"
+                      android:textSize="16dp"
+                      android:layout_centerInParent="true"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Payment"
+                      android:textSize="16dp"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="20dp"
+                      />
+
+              </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:weightSum="4"
+                android:orientation="vertical"
+                android:layout_below="@+id/LL_process_one"
+                android:id="@+id/txt_normal_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <!--  Normal Ad-->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_normal_ads"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:contentPadding="2dp"
+                    app:cardBackgroundColor="#635FCE"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <LinearLayout
+                        android:id="@+id/LL_normal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_margin="5dp"
+                            android:id="@+id/RR_normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_select_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/radio_button_selected" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/img_select_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Normal Ads"
+                                android:textSize="16dp"
+                                android:id="@+id/txtNormalAds"
+                                android:textColor="@color/White"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow_up"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/arrow_up_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow_down"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/arrow_donw_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:visibility="gone"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/vw_dummy"
+                            android:background="@color/White"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <!--normal Ads plan-->
+
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:id="@+id/LL_normal_ads_details"
+                            android:visibility="visible"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:id="@+id/card_regular_add"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:contentPadding="2dp"
+                                app:cardBackgroundColor="@color/White"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <RelativeLayout
+                                    android:padding="5dp"
+                                    android:id="@+id/RR_regular_ad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img_regular_ad"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/radio_button_selected"
+                                        android:layout_centerVertical="true"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_regularAd"
+                                        android:layout_toRightOf="@+id/img_regular_ad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Regular Ads"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <View
+                                        android:id="@+id/view_regular"
+                                        android:background="@color/black"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_toRightOf="@+id/txt_regularAd"
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        >
+                                    </View>
+
+                                    <TextView
+                                        android:layout_toRightOf="@+id/view_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1 Month"
+                                        android:textSize="16dp"
+                                        android:id="@+id/txt_regularAd_months"
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_regular_amount"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="75 AED"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"/>
+
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:contentPadding="2dp"
+                                app:cardBackgroundColor="@color/White"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <RelativeLayout
+                                    android:padding="5dp"
+                                    android:id="@+id/RR_regular_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img_regular_add"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/radio_button_unselected"
+                                        android:layout_centerVertical="true"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_regularAdd"
+                                        android:layout_toRightOf="@+id/img_regular_add"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Regular Ads"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <View
+                                        android:id="@+id/view_regular_ad"
+                                        android:background="@color/black"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_toRightOf="@+id/txt_regularAdd"
+                                        android:layout_width="2dp"
+                                        android:layout_height="match_parent"
+                                        >
+                                    </View>
+
+                                    <TextView
+                                        android:layout_toRightOf="@+id/view_regular_ad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3 Months"
+                                        android:textSize="16dp"
+                                        android:id="@+id/txt_regularAdd_months"
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_regular_ads_amount"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="150 AED"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"/>
+
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_margin="5dp"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:contentPadding="2dp"
+                                app:cardBackgroundColor="@color/White"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:padding="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_above="@+id/view_upgrade_ad"
+                                        android:id="@+id/RR_upgrad_ad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/img_rupgrad_ad"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/radio_button_unselected"
+                                            android:layout_centerVertical="true"/>
+
+                                        <TextView
+                                            android:id="@+id/txt_upgraderAd"
+                                            android:layout_toRightOf="@+id/img_rupgrad_ad"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Upgrade Ads"
+                                            android:textSize="16dp"
+                                            android:textColor="@color/black"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <View
+                                            android:id="@+id/view_upgrage"
+                                            android:background="@color/black"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_toRightOf="@+id/txt_upgraderAd"
+                                            android:layout_width="2dp"
+                                            android:layout_height="match_parent"
+                                            >
+                                        </View>
+
+                                        <TextView
+                                            android:layout_toRightOf="@+id/view_upgrage"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1 Month"
+                                            android:textSize="16dp"
+                                            android:id="@+id/txt_upgraderAd_months"
+                                            android:textColor="@color/black"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <TextView
+                                            android:id="@+id/txt_upgrade_amount"
+                                            android:layout_marginRight="15dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="50 AED"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/black"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"/>
+
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/view_upgrade_ad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="@color/grey_100"/>
+
+                                    <RelativeLayout
+                                        android:padding="5dp"
+                                        android:layout_below="@+id/view_upgrade_ad"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Upgrade so it comes on top and in featured"
+                                            android:textSize="14dp"
+                                            android:textColor="@color/Gray"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp" />
+
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--  Executive Ad-->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_executive_ads"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:contentPadding="2dp"
+                    app:cardBackgroundColor="#635FCE"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_margin="5dp"
+                            android:id="@+id/RR_executive"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_executive"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/radio_button_unselected" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/img_executive"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Executive Ads"
+                                android:textSize="16dp"
+                                android:textColor="@color/White"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow_up_exe"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/arrow_up_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:visibility="gone"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow_down_exe"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/arrow_donw_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:visibility="visible"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/LL_executive_ads"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:contentPadding="2dp"
+                                app:cardBackgroundColor="@color/White"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <RelativeLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:id="@+id/RR_executive_month"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/img_executive_ad"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/radio_button_unselected"
+                                            android:layout_centerVertical="true"/>
+
+
+                                        <TextView
+                                            android:id="@+id/txt_executive_month"
+                                            android:layout_toRightOf="@+id/img_executive_ad"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1 Month"
+                                            android:textSize="16dp"
+                                            android:textColor="@color/black"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"/>
+
+                                        <TextView
+                                            android:id="@+id/txt_executive_price"
+                                            android:layout_marginRight="15dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="50 AED"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/black"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"/>
+
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_below="@+id/RR_executive_month"
+                                        android:id="@+id/view_executive_ad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="@color/grey_100"/>
+
+                                    <RelativeLayout
+                                        android:visibility="gone"
+                                        android:padding="5dp"
+                                        android:layout_below="@+id/view_executive_ad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/txt_executive_message"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/executive_ads"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/Gray"
+                                            />
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <!-- <RelativeLayout
+                         android:id="@+id/RR_executive"
+                         android:layout_margin="5dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="40dp"
+                         >
+
+                         <ImageView
+                             android:id="@+id/img_executive"
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:src="@drawable/radio_button_unselected"
+                             android:layout_centerVertical="true"/>
+
+                         <TextView
+                             android:layout_toRightOf="@+id/img_executive"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Executive Ad"
+                             android:textSize="16dp"
+                             android:textColor="@color/White"
+                             android:layout_centerVertical="true"
+                             android:layout_marginLeft="10dp"/>
+
+                         <ImageView
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:src="@drawable/arrow_up_grey"
+                             android:layout_marginRight="10dp"
+                             android:tint="@color/White"
+                             android:layout_centerVertical="true"
+                             android:layout_alignParentRight="true"/>
+                     </RelativeLayout>
+ -->
+
+
+
+                    <!-- <android.support.v7.widget.CardView
+                         android:layout_weight="1"
+                         android:layout_width="match_parent"
+                         android:layout_height="110dp"
+                         android:layout_margin="5dp"
+                         card_view:cardCornerRadius="7dp"
+                         card_view:contentPadding="2dp"
+                         app:cardBackgroundColor="@color/White"
+                         xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                         xmlns:android="http://schemas.android.com/apk/res/android">
+
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <RelativeLayout
+                                 android:padding="5dp"
+                                 android:layout_marginBottom="10dp"
+                                 android:layout_above="@+id/view_upgrade_ad"
+                                 android:id="@+id/RR_upgrad_ad"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="40dp"
+                                 >
+
+                                 <ImageView
+                                     android:id="@+id/img_rupgrad_ad"
+                                     android:layout_width="20dp"
+                                     android:layout_height="20dp"
+                                     android:src="@drawable/radio_button_unselected"
+                                     android:layout_centerVertical="true"/>
+
+                                 <TextView
+                                     android:id="@+id/txt_upgraderAd"
+                                     android:layout_toRightOf="@+id/img_rupgrad_ad"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Upgrade Ad"
+                                     android:textSize="16dp"
+                                     android:textColor="@color/black"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp"/>
+
+                                 <View
+                                     android:id="@+id/view_upgrage"
+                                     android:background="@color/black"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_toRightOf="@+id/txt_upgraderAd"
+                                     android:layout_width="2dp"
+                                     android:layout_height="match_parent"
+                                     >
+                                 </View>
+
+                                 <TextView
+                                     android:layout_toRightOf="@+id/view_upgrage"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="1 Month"
+                                     android:textSize="16dp"
+                                     android:textColor="@color/black"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp"/>
+
+                                 <TextView
+                                     android:layout_marginRight="15dp"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="50 AED"
+                                     android:textSize="16dp"
+                                     android:textStyle="bold"
+                                     android:textColor="@color/black"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp"/>
+
+
+                             </RelativeLayout>
+
+                             <View
+                                 android:layout_centerVertical="true"
+                                 android:id="@+id/view_upgrade_ad"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="2dp"
+                                 android:background="@color/Red"/>
+
+                             <RelativeLayout
+                                 android:padding="5dp"
+                                 android:layout_below="@+id/view_upgrade_ad"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="40dp"
+                                 >
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Updrade so it comes on topand in featured"
+                                     android:textSize="16dp"
+                                     android:textColor="@color/Gray"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp" />
+
+
+                             </RelativeLayout>
+
+                         </RelativeLayout>
+
+
+                     </android.support.v7.widget.CardView>
+ -->
+                </android.support.v7.widget.CardView>
+
+                <!--Blog Ad-->
+                <!--  <android.support.v7.widget.CardView
+                      android:id="@+id/card_blog_ads"
+                      android:layout_weight="1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="5dp"
+                      card_view:cardCornerRadius="10dp"
+                      card_view:contentPadding="2dp"
+                      app:cardBackgroundColor="#635FCE"
+                      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                      xmlns:android="http://schemas.android.com/apk/res/android">
+
+                      <RelativeLayout
+                          android:id="@+id/RR_Blog"
+                          android:layout_margin="5dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="40dp"
+                          >
+
+                          <ImageView
+                              android:id="@+id/img_Blog"
+                              android:layout_width="20dp"
+                              android:layout_height="20dp"
+                              android:src="@drawable/radio_button_unselected"
+                              android:layout_centerVertical="true"/>
+
+                          <TextView
+                              android:layout_toRightOf="@+id/img_Blog"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Blog Ads"
+                              android:textSize="16dp"
+                              android:textColor="@color/White"
+                              android:layout_centerVertical="true"
+                              android:layout_marginLeft="10dp"/>
+
+                          <ImageView
+                              android:layout_width="18dp"
+                              android:layout_height="18dp"
+                              android:src="@drawable/arrow_donw_grey"
+                              android:layout_marginRight="10dp"
+                              android:tint="@color/White"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentRight="true"/>
+                      </RelativeLayout>
+
+                  </android.support.v7.widget.CardView>-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_blog_ads"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:contentPadding="2dp"
+                    app:cardBackgroundColor="#635FCE"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_margin="5dp"
+                            android:id="@+id/RR_Blog"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_Blog"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/radio_button_unselected" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/img_Blog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Blog Ads"
+                                android:textSize="16dp"
+                                android:textColor="@color/White"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow_up_blog"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/arrow_up_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:visibility="gone"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow_down_blog"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/arrow_donw_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:visibility="visible"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL_executive_blog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/White"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:contentPadding="2dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:id="@+id/RR_blog_month"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/img_blog_ad"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/radio_button_selected" />
+
+
+                                        <TextView
+                                            android:id="@+id/txt_blog_month_ads"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_toRightOf="@+id/img_blog_ad"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="16dp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_blog_price_ads"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="15dp"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:id="@+id/view_blog_ad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_below="@+id/RR_blog_month"
+                                        android:background="@color/grey_100" />
+
+                                    <RelativeLayout
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/view_blog_ad"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/txt_blog_message_ads"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:text="@string/executive_ads"
+                                            android:textColor="@color/Gray"
+                                            android:textSize="15dp" />
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!-- <RelativeLayout
+                         android:id="@+id/RR_executive"
+                         android:layout_margin="5dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="40dp"
+                         >
+
+                         <ImageView
+                             android:id="@+id/img_executive"
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:src="@drawable/radio_button_unselected"
+                             android:layout_centerVertical="true"/>
+
+                         <TextView
+                             android:layout_toRightOf="@+id/img_executive"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Executive Ad"
+                             android:textSize="16dp"
+                             android:textColor="@color/White"
+                             android:layout_centerVertical="true"
+                             android:layout_marginLeft="10dp"/>
+
+                         <ImageView
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:src="@drawable/arrow_up_grey"
+                             android:layout_marginRight="10dp"
+                             android:tint="@color/White"
+                             android:layout_centerVertical="true"
+                             android:layout_alignParentRight="true"/>
+                     </RelativeLayout>
+ -->
+
+
+
+                    <!-- <android.support.v7.widget.CardView
+                         android:layout_weight="1"
+                         android:layout_width="match_parent"
+                         android:layout_height="110dp"
+                         android:layout_margin="5dp"
+                         card_view:cardCornerRadius="7dp"
+                         card_view:contentPadding="2dp"
+                         app:cardBackgroundColor="@color/White"
+                         xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                         xmlns:android="http://schemas.android.com/apk/res/android">
+
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <RelativeLayout
+                                 android:padding="5dp"
+                                 android:layout_marginBottom="10dp"
+                                 android:layout_above="@+id/view_upgrade_ad"
+                                 android:id="@+id/RR_upgrad_ad"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="40dp"
+                                 >
+
+                                 <ImageView
+                                     android:id="@+id/img_rupgrad_ad"
+                                     android:layout_width="20dp"
+                                     android:layout_height="20dp"
+                                     android:src="@drawable/radio_button_unselected"
+                                     android:layout_centerVertical="true"/>
+
+                                 <TextView
+                                     android:id="@+id/txt_upgraderAd"
+                                     android:layout_toRightOf="@+id/img_rupgrad_ad"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Upgrade Ad"
+                                     android:textSize="16dp"
+                                     android:textColor="@color/black"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp"/>
+
+                                 <View
+                                     android:id="@+id/view_upgrage"
+                                     android:background="@color/black"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_toRightOf="@+id/txt_upgraderAd"
+                                     android:layout_width="2dp"
+                                     android:layout_height="match_parent"
+                                     >
+                                 </View>
+
+                                 <TextView
+                                     android:layout_toRightOf="@+id/view_upgrage"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="1 Month"
+                                     android:textSize="16dp"
+                                     android:textColor="@color/black"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp"/>
+
+                                 <TextView
+                                     android:layout_marginRight="15dp"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="50 AED"
+                                     android:textSize="16dp"
+                                     android:textStyle="bold"
+                                     android:textColor="@color/black"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp"/>
+
+
+                             </RelativeLayout>
+
+                             <View
+                                 android:layout_centerVertical="true"
+                                 android:id="@+id/view_upgrade_ad"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="2dp"
+                                 android:background="@color/Red"/>
+
+                             <RelativeLayout
+                                 android:padding="5dp"
+                                 android:layout_below="@+id/view_upgrade_ad"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="40dp"
+                                 >
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Updrade so it comes on topand in featured"
+                                     android:textSize="16dp"
+                                     android:textColor="@color/Gray"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginLeft="10dp" />
+
+
+                             </RelativeLayout>
+
+                         </RelativeLayout>
+
+
+                     </android.support.v7.widget.CardView>
+ -->
+                </android.support.v7.widget.CardView>
+
+                <!--Top News Ad-->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_topNews_ads_ads"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:contentPadding="2dp"
+                    app:cardBackgroundColor="#635FCE"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/RR_Top_news"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_Top_news"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/radio_button_unselected"
+                                android:layout_centerVertical="true"/>
+
+                            <TextView
+                                android:layout_toRightOf="@+id/img_Top_news"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Top News Ads"
+                                android:textSize="16dp"
+                                android:textColor="@color/White"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"/>
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/arrow_donw_grey"
+                                android:layout_marginRight="10dp"
+                                android:tint="@color/White"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL_Top_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/White"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:contentPadding="2dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:id="@+id/RR_Top_news_month"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/img_Top_news_ad"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/radio_button_selected" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtTop_news_month_ads"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_toRightOf="@+id/img_Top_news_ad"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="16dp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_Top_news_price_ads"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="15dp"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:id="@+id/view_Top_news_ad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_below="@+id/RR_Top_news_month"
+                                        android:background="@color/grey_100" />
+
+                                    <RelativeLayout
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/view_Top_news_ad"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/txt_view_Top_news_ad_message_ads"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:text="@string/executive_ads"
+                                            android:textColor="@color/Gray"
+                                            android:textSize="15dp" />
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_margin="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/proceed_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/White"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/submit_btn"
+        />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+

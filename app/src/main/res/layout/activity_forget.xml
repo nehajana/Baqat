@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightgray"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/RR_one"
+        android:background="@drawable/lock_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_margin="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:tint="#fff"/>
+
+        <ImageView
+            android:id="@+id/img_lock"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@drawable/lock"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/RR_one"
+        android:id="@+id/RR_two"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/txt_forgate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_below="@+id/txt_forgate"
+            android:id="@+id/txt_plese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plese enter the email address used to"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_below="@+id/txt_plese"
+            android:id="@+id/txt_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register your account"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt_account"
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID or Mobile"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:layout_below="@+id/txt_id"
+            android:id="@+id/ed_email"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            />
+
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ed_email"
+            android:id="@+id/btn_submit"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/White"
+            android:text="Submit"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/submit_btn"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

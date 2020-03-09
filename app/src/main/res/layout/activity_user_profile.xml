@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightgray">
+
+    <include layout="@layout/tool_bars"
+        android:id="@+id/RR_toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/RR_toolbar"
+        android:layout_above="@+id/RR_buton"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/RR_profile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/user_profile"
+                        android:layout_width="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/defaultprofile"
+                        />
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/edit_profile">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/LL_userdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RR_profile"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_fname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:text="First Name"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:id="@+id/ed_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/txt_fname"
+                            android:backgroundTint="@color/Gray"
+                            android:hint="First Name"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_lname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:text="Last Name"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:id="@+id/ed_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/txt_lname"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/Gray"
+                            android:hint="Last Name"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:text="Email Address"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:id="@+id/ed_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/txt_email"
+                            android:backgroundTint="@color/Gray"
+                            android:hint="Email"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:text="Mobile Number"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:id="@+id/ed_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/txt_mobile"
+                            android:backgroundTint="@color/Gray"
+                            android:hint="Mobile"
+                            android:maxLength="10"
+                            android:maxLines="10"
+                            android:inputType="number"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:text="Country"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:layout_below="@+id/txt_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/Gray"
+                            android:hint="UAE"
+                            android:textSize="18dp" />
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:layout_below="@+id/txt_country"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/black"
+                            android:id="@+id/spinner_country"
+                            android:layout_width="match_parent"
+                            style="@style/Theme.AppCompat.Light"
+                            android:layout_height="40dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <!-- <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp">
+
+
+                         <TextView
+                             android:id="@+id/txt_location"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="3dp"
+                             android:text="Location"
+                             android:textSize="16dp" />
+
+
+
+                         <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                             android:id="@+id/autocomplete"
+                             android:layout_below="@+id/txt_location"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:hint="Enter Location"
+                             app:pacv_googleMapsApiKey="@string/google_maps_api_key" />
+
+
+                         <Spinner
+                             android:visibility="gone"
+                             android:layout_below="@+id/txt_location"
+                             android:id="@+id/spinner_location"
+                             style="@style/Theme.AppCompat.Light"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:layout_alignParentBottom="true"
+                             android:layout_alignParentStart="true"
+                             android:backgroundTint="@color/black" />
+
+                     </RelativeLayout>-->
+
+                    <!--Google Api Location-->
+                    <LinearLayout
+                        android:id="@+id/LL_Location_gogle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/LL_listing_field"
+                        android:layout_marginTop="10dp"
+                        android:divider="@drawable/spacer_sixteen_dp"
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_listing_location"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Listing Location"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@id/txt_listing_location"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/lightgray" />
+
+                        </RelativeLayout>
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Location" >
+
+                            <requestFocus />
+
+                        </AutoCompleteTextView>
+
+
+                        <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                            android:id="@+id/autocomplete"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Location"
+                            app:pacv_googleMapsApiKey="@string/google_maps_api_key" />
+
+
+                        <!--   <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                               android:id="@+id/autocomplete"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_horizontal"
+                               android:padding="16dp"
+                               android:hint="Enter Location"
+                               app:pacv_languageCode="en"
+                               app:pacv_resultType="no_type"
+                               app:pacv_clearEnabled="true"
+                               app:pacv_googleMapsApiKey="@string/google_maps_api_key"
+                               app:pacv_adapterClass="com.seatgeek.placesautocompletedemo.TestPlacesAutocompleteAdapter"/>-->
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Street:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/street"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Zip:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/zip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/RR_changePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_cngpassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="3dp"
+                            android:text="Change password"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/img_arrow"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/arrow_next" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/RR_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/popup_button_small"
+            android:text="Cancel"
+            android:textColor="@color/White"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_cancle"
+            android:id="@+id/btn_save"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/popup_button_small"
+            android:text="Save"
+            android:textColor="@color/White"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

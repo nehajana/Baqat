@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Red"
+    tools:context=".CreateNormalAddScreen.CreateNormalAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--  Expecting A Baby-->
+        <LinearLayout
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/LL_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!-- Kids And Babies - Fashion And Accessories-->
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Properties Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Brand  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+                        <EditText
+                            android:hint="Brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Size   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+                        <EditText
+                            android:hint="Size"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Condition   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Condition *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Status   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Status *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--  Maternity Stuff-->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Properties Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+
+                <!--Brand  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+                        <EditText
+                            android:hint="Brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Condition   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Condition *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Status   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Status *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Child Care,Nurseries And Baby Sitting-->
+
+            <!--Playing Areas And Kids Activities-->
+
+            <!-- Kids And Babies - Events Planners-->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Events Planners Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!-- Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--  Kids And Babies-Photography-->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Photograpy Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Kids Events- Restaurants And Catering-->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Restaurants and Catering Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--  Government Support-->
+
+            <!-- Kids And Babies - Flowers And Plants-->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Flower and Plants Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Brand  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+                        <EditText
+                            android:hint="Brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--  Kids And Babies - Furniture And Toys-->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Furniture Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Brand  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+                        <EditText
+                            android:hint="Brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Condition   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Condition *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Status  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Status *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Shopping-->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/LL_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!--   Flowers and Plants-->
+
+            <!-- fashion (Clothing and Accesories)-->
+
+            <!--   Books and Sattionary-->
+
+            <!--  Beauty Products-->
+
+            <!--Pets-->
+
+            <!-- Music And arts-->
+
+            <!-- Electronic and Home Aplliances-->
+
+            <!-- Mobile phones And Accessories-->
+
+            <!-- Photography-->
+
+            <!--  Motors-->
+
+            <!-- Travel And Tours-->
+
+            <!--Toys-->
+
+            <!-- Sporting Clothing And Good-->
+
+            <!--Furniture-->
+
+            <!--  Medical Equipment And products-->
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <!--Fun And Wellbeing-->
+
+        <!--Planning Celebration-->
+
+        <!-- Planning Vacation-->
+
+        <!-- Starting Business-->
+
+        <!-- Education And Career-->
+
+        <!--Moving or Relocating -->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/LL_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!--  Relocating Support And Shipment-->
+
+            <!--   Properties For Rent-->
+            <LinearLayout
+                android:id="@+id/LL_Properties_rent_Moving_Relocating"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Properties Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Status -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Status *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Size  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+                        <EditText
+                            android:hint="Size"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Bedroom  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Bedroom *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Bathroom  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Bathroom *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Maid Room -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Maid Room *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Swimming Pool  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Swimming Pool *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Private Parking   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Private Parking *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Garden-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Garden *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Developers-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Developers *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+
+                        <EditText
+                            android:hint="Developers"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Available From -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Available From"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Available To -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Available To "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--   Properties For Sale-->
+            <LinearLayout
+                android:id="@+id/LL_Properties_sale_Moving_Relocating"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Properties Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Status -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Status *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Size  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+                        <EditText
+                            android:hint="Size"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Bedroom  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Bedroom *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Bathroom  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Bathroom *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Maid Room -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Maid Room *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Swimming Pool  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Swimming Pool *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Private Parking   -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Private Parking *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Garden-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Garden *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Developers-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Developers *"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+
+                        <EditText
+                            android:hint="Developers"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Available From -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Available From"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Available To -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Available To "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--  Goverment Support-->
+
+            <!-- Nurseries or Baby Sitting-->
+
+            <!--Services,Cleaning And Maintence-->
+
+            <!--  Hotels And Resorts-->
+            <LinearLayout
+                android:id="@+id/LL_Hotels_Resortd"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Hotels And Resorts Fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    >
+                </View>
+
+                <!--Type -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Size -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        >
+
+
+                        <EditText
+                            android:hint="Size"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Bedroom -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Bedroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Bathroom  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Bathroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Maid Room-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Maid Room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Swimming Pool-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Swimming Pool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Private Parking-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Private Parking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Garden  -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Garden"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Available From-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Available From"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Available To-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:text="Available To"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_vedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+

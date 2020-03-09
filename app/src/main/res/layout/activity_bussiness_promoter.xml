@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightgray"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bars"
+        android:id="@+id/RR_toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/RR_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        // ----- Job Description---------
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/LL_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/union"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img"
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15 Nov 2019"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_category"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/category"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_category"
+                        android:id="@+id/txt_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_advertising"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/advertising"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_advertising"
+                        android:id="@+id/txt_img_advertising"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ad ID:9729"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_comment"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/comment" />
+
+                    <TextView
+                        android:id="@+id/txt_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_comment"
+                        android:text="10" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/RR_discription"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/LL_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White">
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Discription"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/txt_job_description"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discription"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/LL_requarment"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/RR_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/White">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/txt_requarment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Requirement"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"/>
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/img_dot1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/number_grey"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/img_dot1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="@string/discription"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/img_dot2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/number_grey"/>
+                    <TextView
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/img_dot2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discription2"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/img_dot3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/number_grey"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/img_dot3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discription3"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/img_dot4"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/number_grey"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/img_dot4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discription4"
+                        android:textSize="16dp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            // ----- Apply Online---------
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/LL_requarment"
+                android:id="@+id/LL_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_apply"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply Online"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/txt_apply"
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:background="@color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:layout_below="@+id/txt_name"
+                        android:id="@+id/ed_fname"
+                        android:hint="Enter Name"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_Lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last name"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:layout_below="@+id/txt_Lastname"
+                        android:id="@+id/ed_Lastname"
+                        android:hint="Enter Last Name"
+                        android:maxLength="50"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Address"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:layout_below="@+id/txt_email"
+                        android:id="@+id/ed_email"
+                        android:hint="Enter Address"
+                        android:maxLength="250"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/txt_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/Red"/>
+
+                    <EditText
+                        android:layout_below="@+id/txt_mobile"
+                        android:id="@+id/ed_mobile"
+                        android:inputType="phone"
+                        android:hint="Enter Mobile Number"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_resume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resume"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/txt_resume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/Red"/>
+
+                    <RelativeLayout
+                        android:id="@+id/RR_upload_File"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/txt_resume"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/upload_bg">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/img_upload"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/upload" />
+
+                            <TextView
+                                android:id="@+id/txt_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@+id/img_upload"
+                                android:text="Upload File"
+                                android:textColor="@color/DarkPurple"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/apply_job"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/White"
+                    android:text="Apply"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/submit_btn"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

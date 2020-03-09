@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Baqat</string>
+    <string name="title_activity_home_fragment">HomeFragment</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="google_maps_api_key">AIzaSyB3_aRArcRZxO8Tz9nBWswQRMgR5HOKuGw</string>
+
+    //volley
+    <string name="Ok">Ok</string>
+    <string name="loading">Loading...</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="InternetNotAvailabel">Cannot connect to server. Please, checey your Internet connectivity.</string>
+    <string name="my_profile">My Profile</string>
+    <string name="title_activity_order_history">OrderHistoryActivity</string>
+    <string name="title_activity_bussiness_career">BussinessCareerActivity</string>
+    <string name="contant">A job description is a functional description of the contents and contexts of the job. Job description narrates the various features and contents of a job. It generally includes duties, purpose, responsibilities, scope, and working conditions of a job along with the job’s title, and the name or It ma.</string>
+    <string name="title_activity_blog">BlogActivity</string>
+    <string name="discription">Job description narrates the various features and employee reports.</string>
+    <string name="discription2">It explains the title of the job. It means, what the particular job is all about is identified under this content. Make your job titles specifically. Targeted job titles are</string>
+    <string name="discription3">It refers to the name of the department where the job under consideration exists in the organization.</string>
+    <string name="discription4">The machines, tools, and equipment used by an incumbent for the performance of tasks are included under this head.</string>
+    <string name="executive_ads">You can make your app more visible to customer by posting it on Baqat4U home page.</string>
+    <string name="title_activity_restaurent_catering">RestaurentCateringActivity</string>
+    <string name="title_activity_gatting_married">GattingMarriedActivity</string>
+    <string name="description">I agreeis something that I really struggled with on my Video Spokesperson gig. Stating that the word “video” was overused. This</string>
+    <string name="title_activity_upload_image_blog">UploadImageBlogActivity</string>
+    <string name="title_activity_category_section">CategorySection</string>
+    <string name="thanku">Thank you for posting your ads on Baqat - Your ad will be on pending status until you  proceeds for payment and submits.</string>
+    <string name="title_activity_home_search_recycleview">HomeSearchRecycleview</string>
+
+    //facebook
+    <string name="facebook_app_id">1088522284848822</string>
+    <string name="fb_login_protocol_scheme">fb1088522284848822</string>
+
+
+</resources>

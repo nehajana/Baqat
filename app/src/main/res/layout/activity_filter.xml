@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".FilterScreen.FilterActivity">
+
+    <include layout="@layout/tool_bars"
+        android:id="@+id/RR_toolbar"/>
+
+    <ScrollView
+        android:visibility="visible"
+        android:layout_above="@+id/RR_applyFilter1"
+        android:layout_below="@+id/RR_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/RR_Occasion"
+                android:paddingBottom="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/txt_occasion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Occasion"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/filter_view_one"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/txt_occasion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Gray"/>
+
+                <!-- Occasion -->
+                <RelativeLayout
+                    android:layout_below="@+id/filter_view_one"
+                    android:id="@+id/RR_gatting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinner_occation"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_below="@+id/RR_gatting"
+                    android:id="@+id/txt_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textStyle="bold"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/filter_view_two"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/txt_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Gray"/>
+
+                <!-- Occasion -->
+                <RelativeLayout
+                    android:layout_below="@+id/filter_view_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinner_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RR_expandale"
+                android:layout_below="@+id/RR_Occasion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ExpandableListView
+                    android:visibility="gone"
+                    android:id="@+id/lvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:childDivider="@color/black"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RR_keyword"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/RR_expandale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_keywords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keywords"
+                    android:textStyle="bold"
+                    android:textSize="14dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/txt_keywords"
+                    android:hint="Keywords" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_upload_images"
+                android:layout_below="@+id/RR_keyword"
+
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Basic info"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/txt_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Gray"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/RR_location"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+
+                    <View
+                        android:id="@+id/filter_view"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/txt_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Gray"/>
+
+                    <!-- Location -->
+                    <RelativeLayout
+                        android:layout_below="@+id/filter_view"
+                        android:id="@+id/RR_upload_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_100">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_Location"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price - AED"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+
+                    <LinearLayout
+                        android:layout_below="@+id/txt_salary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edt_minimum_price"
+                            android:layout_weight="1"
+                            android:layout_width="362dp"
+                            android:layout_height="45dp"
+                            android:inputType="number"
+                            android:layout_below="@+id/txt_salary"
+                            android:hint="Minimum" />
+
+                        <EditText
+                            android:id="@+id/edt_maximum_price"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_width="362dp"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/txt_salary"
+                            android:hint="Maximum" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/RR_applyFilter1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:textColor="@color/White"
+            android:text="APPLY FILTER"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

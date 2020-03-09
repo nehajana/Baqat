@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNormalAddScreen.HarshitScreen">
+
+    <!--Getting Married All List Category -->
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/LL_categories_one"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LL_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- Widding Events Restaurants and Catering Fields-->
+        <LinearLayout
+            android:id="@+id/LL_Restaurants_Catering"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Restaurants and Catering Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/getting_married_spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Bridal And Groom - Fashion And Accessories-->
+        <LinearLayout
+            android:id="@+id/LL_Fashion"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Fashion And Accessories Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Type-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Brands-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Size-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Size "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Size"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Condition-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Status-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Status "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner4"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Wedding Event - Flowers And Plants-->
+        <LinearLayout
+            android:id="@+id/LL_Flowers"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Flowers And Plants Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!-- Type-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner5"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Brand-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Wedding Event - Photography-->
+        <LinearLayout
+            android:id="@+id/LL_Photography"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Photography Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner6"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Wedding Event - Motors-->
+        <LinearLayout
+            android:id="@+id/LL_Motors"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Motors Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Type -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner7"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Brand-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Brand "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Condition -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner8"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Status -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner9"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Model -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Model"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Year Of Making -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Year Of Making"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Year Of Making"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Body Type-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Body Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner10"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Number Of Door-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Number Of Door"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner11"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Color -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Transmission Type -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Transmission Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Transmission Type"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Region Specific-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Region Specific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Region Specific"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Kilometers -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Kilometers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Kilometers"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Number of Cylinder -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Number of Cylinder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Number of Cylinder"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Horsepower   -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Horsepower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Horsepower"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Warranty  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Warranty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Warranty"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--If Rent - Recurrence Of Payment  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="If Rent - Recurrence Of Payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Recurrence Of Payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--  Hotels And Resorts-->
+        <LinearLayout
+            android:id="@+id/LL_Hotels_Resortd"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Hotels And Resorts Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Type -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner12"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Size -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Size"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Bedroom -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Bedroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner13"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Bathroom  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Bathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner14"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Maid Room-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Maid Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner15"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Swimming Pool-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Swimming Pool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner16"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Private Parking-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Private Parking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner17"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Garden  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Garden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner18"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Available From-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Available From"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner19"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Available To-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Available To"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner20"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--   Properties Fields-->
+        <LinearLayout
+            android:id="@+id/LL_Properties"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Properties Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Type -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner21"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Status -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner22"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Size  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+                    <EditText
+                        android:hint="Size"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Bedroom  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Bedroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner23"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Bathroom  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Bathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner24"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Maid Room -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Maid Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner25"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Swimming Pool  -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Swimming Pool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner26"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Private Parking   -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Private Parking "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner27"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Garden-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Garden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner28"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Developers-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Developers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Developers"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Available From -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Available From"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner29"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Available From -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Available From"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner30"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Available To -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Available To"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner31"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Bridal And Groom  - Beauty And SPA-->
+        <LinearLayout
+            android:id="@+id/LL_Beauty_SPA"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Beauty Salon $ SPA Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Type -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner32"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Services,Cleaning And Maintenence-->
+
+        <!-- Furniture (Home And Garden)-->
+        <LinearLayout
+            android:id="@+id/LL_Home_Garden"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Furniture Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Type-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner33"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Brand -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+                    <EditText
+                        android:hint="Brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Condition -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner34"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Status-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner35"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Wedding Events Planners-->
+        <LinearLayout
+            android:id="@+id/LL_Events_Planners"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Events Planners Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--TYPE-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner36"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Government Support-->
+
+        <!-- Electronics And Home Appliances-->
+        <LinearLayout
+            android:id="@+id/LL_Home_Appliances"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Electronics Home Appliances Fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+            </View>
+
+            <!--Brand-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+
+                    <EditText
+                        android:hint="Brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Condition -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner37"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--Status -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_vedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/grey_100">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <Spinner
+                            android:id="@+id/spinner_getting_married_spinner38"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

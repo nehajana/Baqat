@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_margin="5dp"
+    android:layout_below="@+id/RR_one"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="8dp"
+    android:background="@color/White"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/RR_cake"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/RR_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:id="@+id/RR_profile_resautant"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_circle"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/profile_logo"
+                    app:civ_border_color="@color/Red"/>
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/img_circle"
+                    android:id="@+id/img_online"
+                    android:layout_width="11dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="11dp"
+                    android:src="@drawable/circle_gray_bg"
+                    android:layout_marginLeft="-18dp"
+                    android:layout_toRightOf="@+id/img_circle"
+                    android:layout_marginTop="-15dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/RR_profile_resautant"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akib Sheikh"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_below="@+id/user_name"
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Hour ago"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/img_food"
+            android:layout_below="@+id/RR_layout"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:src="@color/light_blue"
+            />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/img_food"
+            android:id="@+id/RR_cake_talk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="left"
+                android:layout_weight="1"
+                android:id="@+id/RR_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/txt_aed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AED"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/MediumPurple"/>
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/txt_price"
+                    android:layout_toRightOf="@+id/txt_aed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/MediumPurple"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_feil"
+                        />
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_feil"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_feil"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_feil"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/small_star"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/RR_cake_talk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_cake_talk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake Talk"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_margin="5dp"/>
+
+            <RelativeLayout
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/txt_cake_talk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_location"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="3dp"
+                    android:src="@drawable/location_details"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_location"
+                    android:id="@+id/txt_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/Gray"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

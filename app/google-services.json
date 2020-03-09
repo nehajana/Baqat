@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "347128152134",
+    "firebase_url": "https://baqat-e63aa.firebaseio.com",
+    "project_id": "baqat-e63aa",
+    "storage_bucket": "baqat-e63aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347128152134:android:d1e19d1dc114dbdae0ca47",
+        "android_client_info": {
+          "package_name": "shubham.com.baqat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347128152134-e2rrhakg1n6593gg06bmdjlot88f6rv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shubham.com.baqat",
+            "certificate_hash": "d09d1971bb9425698733bd0898657dbb7205e72a"
+          }
+        },
+        {
+          "client_id": "347128152134-d2noe7lc0e9v26e9q95j26io7tv2pnhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBv9j6_tGUF_Z1i7teDaK9qJQA7YSvce4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347128152134-d2noe7lc0e9v26e9q95j26io7tv2pnhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

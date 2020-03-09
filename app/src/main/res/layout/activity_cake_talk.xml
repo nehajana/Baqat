@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    tools:context=".CakeTalkScreen.CakeTalkActivity">
+
+    <include layout="@layout/tool_bars"
+        android:id="@+id/RR_toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/RR_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_cake"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/restaurent_img" />
+
+            <RelativeLayout
+                android:layout_below="@+id/img_cake"
+                android:layout_margin="5dp"
+                android:id="@+id/RR_cake_talk"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/RR_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cake Talk"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/user_name"
+                        android:id="@+id/img_online"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/online"
+                        android:layout_marginLeft="5dp"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/RR_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_100" />
+
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/union"/>
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img"
+                            android:id="@+id/txt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15 Nov 2019"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/img_category"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/view"/>
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img_category"
+                            android:id="@+id/txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/img_advertising"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ad_id"/>
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img_advertising"
+                            android:id="@+id/txt_img_advertising"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ad ID:9729"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_options"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/option_white"
+                    android:tint="@color/Gray"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_discription"
+                android:background="@color/White"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/RR_cake_talk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White">
+                    <TextView
+                        android:id="@+id/txt_discription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discription"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_description_detain"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_discription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textSize="14dp"/>
+
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/txt_description_detain"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey_100" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_rastaurent"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/house"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_rastaurent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rastaurent"
+                        android:textSize="14dp"/>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_rastaurent"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey_100" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_call"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/call"/>
+
+                    <TextView
+                        android:id="@+id/user_contact"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+919999999999"
+                        android:textColor="@color/MediumPurple"
+                        android:textSize="14dp"/>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey_100" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_cake_talk"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/company"/>
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="42dp"
+                        android:text="Cake Talk"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_cake_talk"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey_100" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_website"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/website"/>
+
+                    <TextView
+                        android:id="@+id/txt_webLink"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="https://www.facebook.com/"
+                        android:textColor="@color/MediumPurple"
+                        android:textSize="14dp"/>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey_100" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:id="@+id/img_location"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/location_details"/>
+
+
+                    <TextView
+                        android:layout_toRightOf="@+id/img_location"
+                        android:id="@+id/txt_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="International city - Dubai"
+                        android:textColor="@color/Gray"
+                        android:textSize="14dp"
+                        android:layout_marginTop="5dp"
+
+                        />
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey_100" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RR_review"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/txt_costomer_rivew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Costomer Review (10)"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/LL_ranking"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/txt_costomer_rivew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/star_feil"
+                            />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/star_feil"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/star_feil"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/star_feil"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/small_star"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/txt_rating1"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/txt_costomer_rivew"
+                        android:layout_toRightOf="@+id/LL_ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0 out of 5"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/RR_write_review_UP_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/RR_review"
+                    android:layout_margin="10dp"
+                    android:background="@color/grey_100">
+
+                    <TextView
+                        android:id="@+id/txt_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="write a review"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/arrow_donw_grey"
+                        android:tint="@color/black"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/RR_write_review"
+                    android:layout_margin="5dp"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_100"
+                    >
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cars_write_review"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        card_view:cardCornerRadius="7dp"
+                        card_view:contentPadding="2dp"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@color/White"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/RR_executive_month"
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <EditText
+                                    android:id="@+id/edt_commet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Write a review"
+                                    android:textSize="14dp"
+                                    android:background="@null"
+                                    android:textColor="@color/Gray"
+                                    />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/RR_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cars_write_review"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/txt_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Rating"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/txt_rating"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star_feil" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/star_feil" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/star_feil" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/star_feil" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/small_star" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL_rating"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/txt_rating"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ratingBar"
+                                android:scaleX=".5"
+                                android:transformPivotX="0dp"
+                                android:transformPivotY="0dp"
+                                android:max="5"/>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_below="@+id/RR_rating"
+                        android:visibility="visible"
+                        android:layout_margin="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/btn_sign_up"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/White"
+                        android:text="Submit Reviews"
+                        android:textAllCaps="false"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/submit_btn"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_100">
+
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txt_related_tisting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Related Listings"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_below="@+id/txt_related_tisting"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/recycler_view_relatedListing"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@+id/LL_discription"
+                android:layout_marginTop="10dp"
+                android:background="@color/White">
+
+                <RelativeLayout
+                    android:id="@+id/RR_profile_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img_profile"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/profile_logo"
+                        app:civ_border_color="@color/Red"/>
+
+                <!--    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/profile_img" />-->
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_profile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Paul Duncan"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_member_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Member since Aug,2019"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txt_all_ads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_member_date"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="View all ads"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/txt_all_ads"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_color"
+                        android:text="Send massage"
+                        android:textAllCaps="false"
+                        android:textColor="@color/MediumPurple"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
